@@ -1,1 +1,1 @@
-export const CMS_URL = 'http://139.162.98.214:1337';
+export const CMS_URL = 'http://172.104.102.246:1337';
