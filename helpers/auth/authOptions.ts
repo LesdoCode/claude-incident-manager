@@ -80,8 +80,8 @@ export const authOptions: NextAuthOptions = {
 		},
 	},
 	pages: {
-		signIn: '/login',
-		newUser: '/register',
+		signIn: '/auth/login',
+		newUser: '/auth/register',
 	},
 	session: {
 		strategy: 'jwt',
