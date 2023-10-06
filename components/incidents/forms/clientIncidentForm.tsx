@@ -9,7 +9,7 @@ import {
 } from 'flowbite-react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import 'animate.css';
+// import 'animate.css';
 import { useSession } from 'next-auth/react';
 import { useState } from 'react';
 import { CMS_URL } from '@/helpers/consstants';

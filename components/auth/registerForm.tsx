@@ -1,3 +1,4 @@
+'use client';
 import { registerFormValidationSchema } from '@/helpers/auth/formSchemas';
 import { CMS_URL } from '@/helpers/consstants';
 

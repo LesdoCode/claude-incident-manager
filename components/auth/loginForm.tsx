@@ -1,14 +1,6 @@
-import {
-	loginFormValidationSchema,
-	registerFormValidationSchema,
-} from '@/helpers/auth/formSchemas';
-import {
-	Button,
-	Label,
-	Spinner,
-	TextInput,
-	ToggleSwitch,
-} from 'flowbite-react';
+'use client';
+import { loginFormValidationSchema } from '@/helpers/auth/formSchemas';
+import { Button, Label, Spinner, TextInput } from 'flowbite-react';
 import { useFormik } from 'formik';
 import { signIn } from 'next-auth/react';
 import Link from 'next/link';
@@ -129,7 +121,7 @@ const LoginForm = () => {
 					</Button>
 				</div>
 				{!formik.isSubmitting && (
-					<p className='mt-5 text-center'>
+					<p className='mt-5 text-center text-xs'>
 						Don&apos;t have an account?{' '}
 						<Link
 							href='/auth/register'

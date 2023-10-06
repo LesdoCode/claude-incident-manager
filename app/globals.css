@@ -17,5 +17,6 @@
 }
 
 body {
- color: rgb(100, 100, 100);
+ color: rgb(100, 100, 100) !important;
+ background-color: rgb(245, 247, 255);
 }
