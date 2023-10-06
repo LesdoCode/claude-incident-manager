@@ -12,6 +12,7 @@ import * as Yup from 'yup';
 import 'animate.css';
 import { useSession } from 'next-auth/react';
 import { useState } from 'react';
+import { CMS_URL } from '@/helpers/consstants';
 
 const validationSchema = Yup.object({
 	incidentType: Yup.string().required('Please select an incident type'),
@@ -53,7 +54,7 @@ const ClientIncidentForm = () => {
 				formData.append('files.images', values.images[i]);
 			}
 
-			await fetch('http://139.162.98.214:1337/api/incidents', {
+			await fetch(`${CMS_URL}/api/incidents`, {
 				method: 'POST',
 				body: formData,
 				headers: {

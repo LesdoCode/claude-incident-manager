@@ -1,1 +1,1 @@
-export const CMS_URL = 'http://172.104.102.246:1337';
+export const CMS_URL = 'http://claude-incident-manager.tebtec.org:1337';
